@@ -39,7 +39,7 @@
             $has_err=true;
         }
         elseif(strpos($_POST["name"],"abcdefg")){
-			$err_name="Name can not contain sequence of 'abcdefg'";
+			$err_name="Name Can Not Have Sequence Like 'abcdefg'";
             $has_err=true;
         }
         else{
@@ -51,11 +51,11 @@
             $has_err=true;
         }
         elseif((strlen($_POST["uname"])<6)){
-            $err_uname="Username must be 6 characters long!";
+            $err_uname="Username Must Contain 6 characters!";
             $has_err=true;
         }
         elseif(strpos($_POST["uname"]," ")){
-            $err_uname="Username can not contain any space!";
+            $err_uname="Username Can Not Contain Any Space!";
             $has_err=true;
         }
         else{
@@ -67,15 +67,15 @@
             $has_err=true;
         }
         elseif(strlen($_POST["pass"])<8){
-            $err_pass="Password must be 8 characters long.";
+            $err_pass="Password Must Be 6 characters Long!";
             $has_err=true;
         }
         elseif(!strpos($_POST["pass"],"#") || !strpos($_POST["pass"],"?")){
-            $err_pass="Password must contain '#' or '?'.";
+            $err_pass="Password Must Contain '#' or '?'.";
             $has_err=true;
         }
         elseif(!strpos($_POST["pass"],"1")){
-            $err_pass="Password must contain 1 numeric.";
+            $err_pass="Password Must Contain 1 Numeric!";
             $has_err=true;
         }
         elseif(strtolower($_POST["pass"])==$_POST["pass"] || strtolower($_POST["pass"])==$_POST["pass"]){
@@ -91,30 +91,22 @@
             $has_err=true;
         }
         elseif(!strcmp($_POST["cpass"],strtoupper($_POST["pass"]))){
-            $err_cpass="Password and Confirm Password must be same.";
+            $err_cpass="Password and Confirm Password must be same!";
             $has_err=true;
         }
-        //email validate
-        if(empty($_POST["email"])){
-            $err_email="Please Enter Email!";
-            $has_err=true;
-        }
+        
        
-        else{
-            $err_email="Email must contain '@' and '.'.";
-            $has_err=true;
-        }
         //phonecode validate
         if(empty($_POST["phoneCode"])){
-            $err_phoneCode="Please Enter Phone Code!";
+            $err_phoneCode="Please Enter Phone Code";
             $has_err=true;
         }
         elseif(strlen($_POST["phoneCode"]) != 3){
-            $err_phoneCode="Phone code must be 3 characters.";
+            $err_phoneCode="Phone Code Must Contain 3 Characters!";
             $has_err=true;
         }
         elseif(!is_numeric($_POST["phoneCode"])){
-            $err_phoneCode="Phone code must be numeric.";
+            $err_phoneCode="Phone Code Must Be Numeric!";
             $has_err=true;
         }
         else{
@@ -126,11 +118,11 @@
             $has_err=true;
         }
         elseif(strlen($_POST["phoneNum"]) != 10){
-            $err_phoneNum="Phone number must be 10 characters.";
+            $err_phoneNum="Phone Number Must Contain 10 characters!";
             $has_err=true;
         }
         elseif(!is_numeric($_POST["phoneNum"])){
-            $err_phoneNum="Phone number must be numeric.";
+            $err_phoneNum="Phone Number Must Be Numeric!";
             $has_err=true;
         }
         else{
@@ -138,7 +130,7 @@
         }
         //address validate
         if(empty($_POST["address"])){
-            $err_address="Address can not be empty.";
+            $err_address="Address Can Not Be Empty!";
             $has_err=true;
         }
         else{
@@ -146,7 +138,7 @@
         }
         //city validate
         if(empty($_POST["city"])){
-            $err_city="City can not be empty.";
+            $err_city="City Can Not Be Empty!";
             $has_err=true;
         }
         else{
@@ -154,7 +146,7 @@
         }
         //state validate
         if(empty($_POST["state"])){
-            $err_state="State can not be empty.";
+            $err_state="State Can Not Be Empty!";
             $has_err=true;
         }
         else{
@@ -162,17 +154,17 @@
         }
         //postcode validate
         if(empty($_POST["postalCode"])){
-            $err_postalCode="Postal Code can not be empty.";
+            $err_postalCode="Postal Code Can Not Be Empty!";
             $has_err=true;
         }
         else{
             $postalCode=htmlspecialchars($_POST["postalCode"]);
         }
-        //date of birth validate
+        
         
         //gender validate
         if(!isset($_POST["gender"])){
-			$err_gender="Gender Required.";
+			$err_gender="Gender Required!";
 			$has_err=true;
         }
         else{
@@ -181,7 +173,7 @@
         
         //bio validate
         if(empty($_POST["bio"])){
-            $err_bio="Bio can not be empty!";
+            $err_bio="Bio Can Not Be Empty!";
             $has_err=true;
         }
         else{
