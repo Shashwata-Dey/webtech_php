@@ -1,3 +1,3 @@
 <?php
-    echo "<h1>Welcome To The Dashboard</h1>";
+    echo "<h1>WELCOME TO THE DASHBOARD</h1>";
 ?>

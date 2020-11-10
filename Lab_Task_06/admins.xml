@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<admins>
+	<admin>
+		<fullname>shashwata</fullname>
+		<username>shashwata</username>
+		<password>12345678@#67</password>
+		<gender>Male</gender>
+        <contact>01763455974</contact>
+        <city>Noakhali</city>
+	</admin>
+    <admin>
+        <fullName>Shashwata</fullName>
+		<userName>shashwatazzz</userName>
+		<password>34567898</password>
+		<gender>Male</gender>
+		<mail>shashwata@gmail.com</mail>
+		<contact>01886909952</contact>
+		<city>Dhaka</city>	
+	</admin>
+</admins>
