@@ -94,6 +94,9 @@
             $err_cpass="Password and Confirm Password must be same!";
             $has_err=true;
         }
+		else{
+            $cpass=htmlspecialchars($_POST["cpass"]);
+        }
         
        
         //phonecode validate
@@ -233,14 +236,14 @@
                                         <td><input type="text" placeholder="Street name" name="address"> <?php echo $err_address ?></td>
                                     </tr>
                                     <tr>
-                                        <td><!--NOTHING--></td>
+                                        <td></td>
                                         <td>
                                             <input type="text" placeholder="City" size="6" name="city"> <?php echo $err_city ?>-
                                             <input type="text" placeholder="State" size="6" name="state"> <?php echo $err_state ?>
                                         </td>
                                     </tr>
                                     <tr>
-                                        <td><!--NOTHING--></td>
+                                        <td></td>
                                         <td><input type="text" placeholder="Postal Code" name="postalCode"> <?php echo $err_postalCode ?></td>
                                     </tr>
                                     <tr>
@@ -295,7 +298,7 @@
                                         <td><textarea name="bio"></textarea> <?php echo $err_bio ?></td>
                                     </tr>
                                     <tr>
-                                        <td><!--NOTHING--></td>
+                                        <td></td>
                                         <td>
                                             <input type="submit" name="register" value="Register">
                                         </td>
